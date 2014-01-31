@@ -24,7 +24,6 @@ public class Application {
     public static void main(String[] args) throws Exception {
         new SpringApplicationBuilder(Application.class)
                 .showBanner(false)
-                .properties("security.basic.enabled=false")
                 .run(args);
     }
 
