@@ -98,14 +98,14 @@
         <repository>
             <id>spring-snapshots</id>
             <name>Spring Milestones</name>
-            <url>http://repo.spring.io/milestones</url>
+            <url>http://repo.spring.io/milestone</url>
         </repository>
     </repositories>
 
     <pluginRepositories>
         <pluginRepository>
             <id>spring-milestones</id>
-            <url>http://repo.spring.io/milestones</url>
+            <url>http://repo.spring.io/milestone</url>
         </pluginRepository>
     </pluginRepositories>
 

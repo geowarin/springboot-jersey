@@ -18,7 +18,7 @@ import java.util.List;
 @Component
 public class RestResource {
 
-    List<Message> messages = Collections.synchronizedList(new ArrayList<>());
+    List<Message> messages = Collections.synchronizedList(new ArrayList<Message>());
 
     @PostConstruct
     public void init() {

@@ -40,8 +40,8 @@ public class RestResourceTest extends JerseyTest {
     public void testMessages() throws JSONException {
         final String messages = target("messages").request().get(String.class);
         String expected = "[ " +
-                "{ 'owner': 'Joe', 'content': 'Hello'}," +
-                "{ 'owner': 'Jane', 'content': 'Spring boot is cool !'}" +
+                "{ 'author': 'Joe', 'contents': 'Hello'}," +
+                "{ 'author': 'Jane', 'contents': 'Spring boot is cool !'}" +
                 "]";
         JSONAssert.assertEquals(expected, messages, JSONCompareMode.LENIENT);
     }
