@@ -2,6 +2,7 @@ package com.geowarin;
 
 import com.geowarin.config.JerseyConfig;
 import com.geowarin.rest.RestResource;
+import com.geowarin.service.MessageService;
 import org.glassfish.jersey.servlet.ServletContainer;
 import org.glassfish.jersey.servlet.ServletProperties;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -17,7 +18,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @author Geoffroy Warin (http://geowarin.github.io)
  */
 @EnableAutoConfiguration
-@ComponentScan(basePackageClasses = RestResource.class)
+@ComponentScan(basePackageClasses = {RestResource.class, MessageService.class})
 public class Application {
 
     public static void main(String[] args) throws Exception {

@@ -6,7 +6,6 @@ import org.glassfish.jersey.server.spring.scope.RequestContextFilter;
 
 import javax.ws.rs.ApplicationPath;
 
-@ApplicationPath("/rest")
 public class JerseyConfig extends ResourceConfig {
 
     public JerseyConfig() {

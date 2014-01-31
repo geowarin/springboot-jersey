@@ -1,6 +1,7 @@
 package com.geowarin.config;
 
 import com.geowarin.rest.RestResource;
+import com.geowarin.service.MessageService;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -11,6 +12,6 @@ import org.springframework.context.annotation.Configuration;
  * @author Geoffroy Warin (http://geowarin.github.io)
  */
 @Configuration
-@ComponentScan(basePackageClasses = RestResource.class)
+@ComponentScan(basePackageClasses = {RestResource.class, MessageService.class})
 public class TestConfig {
 }
