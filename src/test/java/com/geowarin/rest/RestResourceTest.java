@@ -27,7 +27,7 @@ public class RestResourceTest extends JerseyTest {
     protected Application configure() {
         ApplicationContext context = new AnnotationConfigApplicationContext(TestConfig.class);
         return new JerseyConfig()
-                .property(SpringComponentProvider.PARAM_SPRING_CONTEXT, context);
+                .property("contextConfig", context);
     }
 
     @Test
