@@ -18,7 +18,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <jersey.version>2.6-SNAPSHOT</jersey.version>
+        <jersey.version>2.6</jersey.version>
     </properties>
 
     <dependencyManagement>
@@ -99,12 +99,6 @@
             <id>spring-snapshots</id>
             <name>Spring Milestones</name>
             <url>http://repo.spring.io/milestone</url>
-        </repository>
-        <repository>
-            <id>snapshot-repository.java.net</id>
-            <name>Java.net Snapshot Repository for Maven</name>
-            <url>https://maven.java.net/content/repositories/snapshots/</url>
-            <layout>default</layout>
         </repository>
     </repositories>
 
